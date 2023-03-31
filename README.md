@@ -10,7 +10,12 @@
 
 This application is a Password Generator. The Password Generator gives the user a series of questions including how long they would like their password and whether or not to include such characters as lower case alphabet, upper case alphabet, numbers, or symbols. Additionally, if the user chooses a password length that is too short or too long, a message appears with the available options. Also, a message alerts the user if they did not choose any character options and the process begins again.
 
-![Screenshot of My Site](assets/images/PG%20Site.PNG)
+
+
+
+![Screenshot of My Site](images/PG%20Site.PNG)
+
+
 
 
 [Visit the Deployed Site](https://tdusenbury.github.io/Password-Generator-Project/)
@@ -54,10 +59,10 @@ I struggled with this project every time I tried to move to the next part before
 Fortunately, a great classmate helped explain my error and helped me simplify the statement.
 Here are pictures of the code that finally worked and the message it now produces if no character options are chosen:
 
-![Screenshot of My Site](assets/images/Code%20if%20No%20Choices.PNG)
+![Screenshot of My Site](images/Code%20if%20No%20Choices.PNG)
 
 
-![Screenshot of My Site](assets/images/No%20Choices%20Made%20Message.PNG)
+![Screenshot of My Site](images/No%20Choices%20Made%20Message.PNG)
 
 ## Author Info
 
