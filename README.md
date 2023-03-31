@@ -13,7 +13,7 @@ This application is a Password Generator. The Password Generator gives the user 
 ![Screenshot of My Site](assets/images/PG%20Site.PNG)
 
 
-[Visit the Deployed Site](https://tdusenbury.github.io/Tamara-Dusenbury-Portfolio/)
+[Visit the Deployed Site](https://tdusenbury.github.io/Password-Generator-Project/)
 
 
 ## Code Example
