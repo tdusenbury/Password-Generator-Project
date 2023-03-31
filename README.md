@@ -16,14 +16,48 @@ This application is a Password Generator. The Password Generator gives the user 
 [Visit the Deployed Site](https://tdusenbury.github.io/Tamara-Dusenbury-Portfolio/)
 
 
+## Code Example
+
+Instead of using the array method to state all of my elements, I chose to use the object method by defining "keys" and then pulling each of the chosen elements into a new string called customerChoices.
+
+```
+Created an object:
+const keys = {
+  upperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  lowerCase: "abcdefghijklmnopqrstuvwxyz",
+  numbers: "0123456789",
+  symbols: "!@#$%^&*~+={}[]:,./"
+}
+
+The new string:
+var customerChoices =""
+
+Directed choices to go into the new string:
+if (confirmLowerCase === true) {
+    console.log("Before ", customerChoices);
+    customerChoices = customerChoices + keys.lowerCase;
+    console.log("After ", customerChoices);
+}
+```
+
+
 ## Usage 
 
-This site serves as an overview of skills I have and continue to work on. Please click on links to see work I have completed and entertaining previews of work to come!
+This Password Generator can be used by anyone who wants to control most of the length and types of characters in a random password.
 
 
 ## Learning Points 
 
-I had to utilize Git skills to create and maintain the repository during this project. I had to understand and assimilate HTML semantic tags and attributes. I also had to understand how to set up images, text, and flexboxes within the HTML so that I could then style them in CSS. CSS was a steep learning curve, but I was able to create flex boxes with responsive design and placement, create some pseudo-classes, as well as some basic font, text-size, and color changes.
+This project involved utilizing JavaScript. I tried to approach it section by section initially, but became stuck. I was able to get advice from my tutor as well as classmates and went back to writing each section followed by a console.log to test that the code was working without error. I learned about arrays and objects, random number/character generation, the types of message boxes prompts, alerts, and confirms can produce.
+
+I struggled with this project every time I tried to move to the next part before it was ready. It took lots of testing before I was able to get my "If not truthy" alert correct if someone did not choose any options. I was trying to evaluate it as an equality not as a true/false statement.
+Fortunately, a great classmate helped explain my error and helped me simplify the statement.
+Here are pictures of the code that finally worked and the message it now produces if no character options are chosen:
+
+![Screenshot of My Site](assets/images/Code%20if%20No%20Choices.PNG)
+
+
+![Screenshot of My Site](assets/images/No%20Choices%20Made%20Message.PNG)
 
 ## Author Info
 
@@ -41,7 +75,7 @@ TAMARA "T" DUSENBURY
 
 ## Credits
 
-Shout out to Laurie Fish for helping keep the ideas rolling and weird for more hours than we care to admit!!!
+Shout out to Laurie Fish for helping keep the ideas rolling and weird for more hours than we care to admit; to my tutor Katie; and to Liubov Sobolevskaya for making me think so very hard!!!
 
 
 ## License
