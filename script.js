@@ -1,16 +1,3 @@
-// Assignment Code
-//var generateBtn = document.querySelector("#generate"); //must keep
-// Write password to the #password input
-//function writePassword() { //must keep
- // var password = generatePassword(); // must keep
-  //var passwordText = document.querySelector("#password"); //must keep
-
-  //passwordText.value = password;  //must keep
-//}
-// Add event listener to generate button (This stays at the bottom.)
-//generateBtn.addEventListener("click", writePassword); //must keep
-//}
-//==================================================================
 var generateBtn = document.querySelector("#generate"); //must keep
 
 const keys = {
@@ -20,7 +7,7 @@ const keys = {
   symbols: "!@#$%^&*~+={}[]:,./"
 }
 
-var superString =""
+var customerChoices =""
 
 function writePassword() { //must keep
   var password = generatePassword(); // must keep
@@ -43,37 +30,35 @@ function generatePassword() {
   var confirmNumbers = confirm("Would you like numbers in your password?")
   console.log(passwordLength, confirmLowerCase, confirmUpperCase,confirmSymbols,confirmNumbers);
 
-//  // if (confirmLowerCase!= && confirmUpperCase!= && confirmNumbers!= && confirmSymbols!= ) {
-//     alert("Please choose at least one of the password parameters.");
-//     return;
-//    }
-
   if (confirmLowerCase === true) {
-    console.log("Before ", superString);
-    superString = superString + keys.lowerCase;
-    console.log("After ", superString);
+    console.log("Before ", customerChoices);
+    customerChoices = customerChoices + keys.lowerCase;
+    console.log("After ", customerChoices);
   }
   if (confirmUpperCase === true) {
-    console.log("Before ", superString);
-    superString = superString + keys.upperCase;
-    console.log("After ", superString);
+    console.log("Before ", customerChoices);
+    customerChoices = customerChoices + keys.upperCase;
+    console.log("After ", customerChoices);
   }
   if (confirmNumbers === true) {
-    console.log("Before ", superString);
-    superString = superString + keys.numbers;
-    console.log("After ", superString);
+    console.log("Before ", customerChoices);
+    customerChoices = customerChoices + keys.numbers;
+    console.log("After ", customerChoices);
   }
   if (confirmSymbols === true) {
-    console.log("Before ", superString);
-    superString = superString + keys.symbols;
-    console.log("After ", superString);
+    console.log("Before ", customerChoices);
+    customerChoices = customerChoices + keys.symbols;
+    console.log("After ", customerChoices);
   }
-    
+  if (customerChoices!=confirmLowerCase && customerChoices!=confirmUpperCase!= && customerChoices!=confirmNumbers!= && customerChoices!=confirmSymbols!= ) {
+    alert("Please choose at least one of the password parameters.");
+  return;
+     }
   var password = ""
   for (var i=0; i < passwordLength; i++) {
 
-  var random = Math.floor(Math.random() * superString.length);
-    password = password + superString[random];
+  var random = Math.floor(Math.random() * customerChoices.length);
+    password = password + customerChoices[random];
     console.log(password)
 }
   return password;
