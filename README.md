@@ -1,19 +1,16 @@
 # Password-Generator-Project
+
 ## Technology Used 
 
 | Technology Used         | Resource URL           | 
 | ------------- |:-------------:| 
-| HTML    | [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) | 
-| CSS     | [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)      |   
-| Git | [https://git-scm.com/](https://git-scm.com/)     |    
+| JavaScript | [https://www.w3schools.com/jsref/met_win_prompt.asp](https://www.w3schools.com/jsref/met_win_prompt.asp);  [https://www.w3schools.com/jsref/met_win_alert.asp](https://www.w3schools.com/jsref/met_win_alert.asp); [https://www.w3schools.com/jsref/met_win_confirm.asp](https://www.w3schools.com/jsref/met_win_confirm.asp); [https://www.w3schools.com/jsref/prop_win_length.aspWeb/CSS](https://www.w3schools.com/jsref/prop_win_length.asp); [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor); [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random); [https://www.w3schools.com/js/js_objects.asp](https://www.w3schools.com/js/js_objects.asp); [https://www.w3schools.com/js/js_strings.asp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor)
 
 ## Description 
 
-Thank you for checking out my development porfolio! Here you can see how my projects began with some very basic skills which evolved into more complex applications and designs.
+This application is a Password Generator. The Password Generator gives the user a series of questions including how long they would like their password and whether or not to include such characters as lower case alphabet, upper case alphabet, numbers, or symbols. Additionally, if the user chooses a password length that is too short or too long, a message appears with the available options. Also, a message alerts the user if they did not choose any character options and the process begins again.
 
-The journey to make the initial layout for this site began less than a week after I first dove into full stack development. Many times throughout I thought I would just cry; but then I would slow down, review my work, and get an "A-Ha!" moment....or "A-Ha!" adjacent. The bottom line is that these projects pushed me to accept that I can exist out of my comfort zone, on a steep learning curve, up-hill both ways, and I can do it!
-
-![Screenshot of My Site](assets/images/T%20Portfolio%20Screenshot.PNG)
+![Screenshot of My Site](assets/images/PG%20Site.PNG)
 
 
 [Visit the Deployed Site](https://tdusenbury.github.io/Tamara-Dusenbury-Portfolio/)

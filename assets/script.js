@@ -22,14 +22,16 @@ function generatePassword() {
   var passwordLength=prompt("How many characters in your password?");
   if (passwordLength <8 || passwordLength >128) {
     alert("Please choose a number between 8 and 128.")
-    return;
+    return"";
   }
+ 
   var confirmLowerCase = confirm("Would you like lower case letters in your password?");
   var confirmUpperCase = confirm("Would you like upper case letters in your password?")
   var confirmSymbols = confirm("Would you like symbols in you password?");
   var confirmNumbers = confirm("Would you like numbers in your password?")
   console.log(passwordLength, confirmLowerCase, confirmUpperCase,confirmSymbols,confirmNumbers);
 
+ //IF TRUE THEN....
   if (confirmLowerCase === true) {
     console.log("Before ", customerChoices);
     customerChoices = customerChoices + keys.lowerCase;
@@ -50,10 +52,14 @@ function generatePassword() {
     customerChoices = customerChoices + keys.symbols;
     console.log("After ", customerChoices);
   }
-  if (customerChoices!=confirmLowerCase && customerChoices!=confirmUpperCase!= && customerChoices!=confirmNumbers!= && customerChoices!=confirmSymbols!= ) {
+  
+  //IF AT LEAST ONE IS NOT CHOSEN THEN....
+  if (!confirmLowerCase && !confirmUpperCase && !confirmNumbers && !confirmSymbols) {
     alert("Please choose at least one of the password parameters.");
-  return;
+  return"";
      }
+
+  //GENERATE THE PASSWORD FROM THE USER OPTIONS
   var password = ""
   for (var i=0; i < passwordLength; i++) {
 
